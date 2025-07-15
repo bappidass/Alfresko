@@ -26,14 +26,14 @@ const BookingPreferences = ({ onContinue }: BookingPreferencesProps) => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto bg-white p-4">
+    <div className="max-w-6xl mx-auto bg-white p-2">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-serif text-gray-900 mb-2">Alfresco Grand</h1>
         <p className="text-gray-600">Select your preferences</p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        <div className="space-y-6">
+      <div className="grid md:grid-cols-2 gap-2">
+        <div className="space-y-3">
           {/* Date Selection */}
           <div>
             <h3 className="text-lg font-semibold mb-3">📅 Select Date</h3>

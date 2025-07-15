@@ -48,9 +48,7 @@ const Heritage = () => {
                   {post.excerpt}
                 </p>
                 
-                <Button variant="outline" className="text-blue-600 border-blue-600 hover:bg-blue-50">
-                  Read More
-                </Button>
+              
               </div>
             </div>
           ))}
