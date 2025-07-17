@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const navigation = [
   { label: "Daily Cruises", href: "/daily-cruises" },
-  { label: "Private Charter", href: "#private-charter" },
-  { label: "About Us", href: "#about" },
+  { label: "Private Charter", href: "/private-charters" },
+  { label: "About Us", href: "/about-us" },
   { label: "Blog", href: "#blog" },
   { label: "Gallery", href: "#gallery" },
   { label: "FAQs", href: "#faqs" },

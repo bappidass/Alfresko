@@ -26,24 +26,24 @@ const BookingPreferences = ({ onContinue }: BookingPreferencesProps) => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto bg-white p-2">
+    <div className="max-w-6xl mx-auto bg-white p-8">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-serif text-gray-900 mb-2">Alfresco Grand</h1>
         <p className="text-gray-600">Select your preferences</p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-2">
-        <div className="space-y-3">
+      <div className="grid md:grid-cols-2 gap-2  ">
+        <div className="space-y-3 ">
           {/* Date Selection */}
           <div>
             <h3 className="text-lg font-semibold mb-3">📅 Select Date</h3>
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-wrap  ">
               {['01 Apr 2025', '02 Apr 2025', '03 Apr 2025'].map((date) => (
                 <Button
                   key={date}
                   variant={selectedDate === date ? 'default' : 'outline'}
                   onClick={() => setSelectedDate(date)}
-                  className="text-sm bg-blue-500 text-white"
+                  className={`text-sm ${selectedDate === date ? 'bg-blue-600 text-white' : 'border-blue-500'} `}
                 >
                   {date}
                 </Button>
@@ -54,15 +54,15 @@ const BookingPreferences = ({ onContinue }: BookingPreferencesProps) => {
           {/* Cruise Selection */}
           <div>
             <h3 className="text-lg font-semibold mb-3">🚢 Select Cruise</h3>
-            <div className="grid gap-2">
+            <div className={`grid md:grid-cols-3 gap-2 `}>
               {websiteData.dailyCruises.section.map((cruise) => (
                 <Button
                   key={cruise.id}
                   variant={selectedCruise === cruise.title ? 'default' : 'outline'}
                   onClick={() => setSelectedCruise(cruise.title)}
-                  className="justify-start h-auto p-4 "
+                  className={`justify-start h-auto p-4  ${selectedCruise === cruise.title ?'bg-blue-600 text-white':'border-blue-500'}`}
                 >
-                  <div className="text-left ">
+                  <div className={`text-left`}>
                     <div className="font-semibold">{cruise.title}</div>
                     <div className="text-sm opacity-70">{cruise.timing}</div>
                   </div>

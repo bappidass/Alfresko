@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 
 const DailyCruisesPage = () => {
   return (
-    <section className="py-20 ">
+    <section className="py-6 ">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-light text-gray-900 mb-6">
+        <div className="text-center mb-6">
+          <h2 className="text-2xl md:text-5xl font-serif font-light text-gray-900 mb-6">
             {websiteData.dailyCruises.title}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">

@@ -6,9 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import DailyCruisesPage from "./pages/DailyCruisesPage";
+import AboutUsPage from "./pages/AboutUsPage";
+import PrivateChartersPage from "./pages/PrivateChartersPage";
 import MainLayout from "./components/Layout/MainLayout";
 import SecondLayout from "./components/Layout/SecondLayout";
-import BookingFlow from "./pages/BookingFlow";
+import BookingFlow from "./pages/BookingFlowPage";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -26,8 +28,10 @@ const App = () => (
 
           {/* Second Layout routes */}
           <Route element={<SecondLayout />}>
-          <Route path="/booking-flow" element={<BookingFlow />} />
+            <Route path="/booking-flow" element={<BookingFlow />} />
             <Route path="/daily-cruises" element={<DailyCruisesPage />} />
+            <Route path="/about-us" element={<AboutUsPage />} />
+              <Route path="/private-charters" element={<PrivateChartersPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
