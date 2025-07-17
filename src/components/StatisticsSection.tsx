@@ -1,9 +1,9 @@
-
 import { websiteData } from "@/data/websiteData";
+import CountUp from "react-countup";
 
 const StatisticsSection = () => {
   return (
-    <section 
+    <section
       className="py-20 relative bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url('/images/Static-section.png')` }}
     >
@@ -14,7 +14,7 @@ const StatisticsSection = () => {
             <div key={index} className="text-center">
               <div className="bg-white rounded-lg p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <div className="text-2xl md:text-4xl font-bold text-gray-900 mb-2">
-                  {stat.value}
+                  <CountUp end={parseInt(stat.value)} duration={4} />+
                 </div>
                 <div className="text-lg font-light text-gray-600">
                   {stat.label}
