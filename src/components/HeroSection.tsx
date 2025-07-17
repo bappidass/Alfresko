@@ -35,7 +35,7 @@ const HeroSection = () => {
       </Swiper>
 
       {/* Hero Content */}
-      <div className="absolute inset-0 z-10 flex items-center justify-center mt-48">
+      <div className="absolute inset-0 z-10 flex items-center justify-center md:mt-48">
         <div className="container mx-auto px-2">
           <div className="w-full mx-auto  text-white">
             <h1 className="text-2xl lg:text-6xl font-serif mt-2 font-light leading-tight mb-6 animate-fade-in">
@@ -50,7 +50,7 @@ const HeroSection = () => {
               </button>
 
               {/* News Marquee Section */}
-              <div className="w-full max-w-6x1 mt-10  animate-fade-in"> {/* Adjusted styling for marquee */}
+              <div className="w-full max-w-6x1 md:mt-10  animate-fade-in"> {/* Adjusted styling for marquee */}
                 <NewsMarquee />
               </div>
             </div>
