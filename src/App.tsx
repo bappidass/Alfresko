@@ -11,6 +11,7 @@ import PrivateChartersPage from "./pages/PrivateChartersPage";
 import MainLayout from "./components/Layout/MainLayout";
 import SecondLayout from "./components/Layout/SecondLayout";
 import BookingFlow from "./pages/BookingFlowPage";
+import CruiseDetailPage from "./pages/CruiseDetailPage";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -31,7 +32,8 @@ const App = () => (
             <Route path="/booking-flow" element={<BookingFlow />} />
             <Route path="/daily-cruises" element={<DailyCruisesPage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
-              <Route path="/private-charters" element={<PrivateChartersPage />} />
+            <Route path="/private-charters" element={<PrivateChartersPage />} />
+            <Route path="/cruise-detail" element={<CruiseDetailPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

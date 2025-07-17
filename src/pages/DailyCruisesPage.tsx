@@ -18,7 +18,7 @@ const DailyCruisesPage = () => {
         <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
           {websiteData.dailyCruises.section.map((section) => (
           <Link
-  to="/booking-flow"
+  to="/cruise-detail"
   key={section.id}
   className="group cursor-pointer block"
 >

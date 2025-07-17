@@ -1,8 +1,7 @@
 import React from 'react';
 import { websiteData } from '@/data/websiteData';
-const Clients = () => {
- 
 
+const Clients = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-6">
@@ -19,9 +18,12 @@ const Clients = () => {
               key={index}
               className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 w-full h-24 flex items-center justify-center"
             >
-              <div className="w-16 h-16 bg-gray-200 rounded flex items-center justify-center">
-                <span className="text-xs text-gray-500">{client.name}</span>
-              </div>
+              <img
+                src={client.logo}
+                alt={client.name}
+                title={client.name}
+                className="max-h-16 max-w-[80%] object-contain"
+              />
             </div>
           ))}
         </div>
